@@ -1,18 +1,28 @@
 # V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本 （Use Path）
 # 80端口开启方法
-vi /etc/sysconfig/iptables　
+vi /etc/sysconfig/iptables
+
 #允许80端口通过防火墙，加在COMMIT之前
+
 A INPUT -m state –state NEW -m tcp -p tcp –dport 80 -j ACCEPT
+
 #保存退出后，重启防火墙
+
 service iptables restart
+
 #或者 /etc/init.d/iptables restart
 
 #直接command更改(原理也是同1)
 #查看防火墙状态
+
 service iptables status
+
 #开启80端口
+
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT 
+
 #保存，可能我之前就是没有保存，导致配置无效。。。
+
 service iptables save 
 ### 2019-09-19
 脚本功能性测试，已通过,目前该脚本依然可正常工作
