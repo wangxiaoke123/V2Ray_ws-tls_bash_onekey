@@ -1,4 +1,8 @@
 # V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本 （Use Path）
+# 另一种类似V2的方法，比较快，智能分流，具体项目https://github.com/atrandys/trojan
+
+代码curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.sh && chmod +x trojan_install.sh && ./trojan_install.sh
+
 # 80端口开启方法
 vi /etc/sysconfig/iptables
 
