@@ -3,7 +3,9 @@
 
 代码curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.sh && chmod +x trojan_install.sh && ./trojan_install.sh
 
-适用Centos7，需要域名解析，安全证书查找命令：/usr/src/trojan
+适用Centos7，需要域名解析，需要新修改客户端配置文件，需要将服务器证书放到里面，安全证书查找命令：/usr/src/trojan，需要下载SwitchyOmega，socks5代理的1080
+
+rojan客户端下载地址：https://github.com/atrandys/trojan/releases/download/1.0.0/trojan.zip
 
 # 80端口开启方法
 vi /etc/sysconfig/iptables
