@@ -3,6 +3,8 @@
 
 代码curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.sh && chmod +x trojan_install.sh && ./trojan_install.sh
 
+适用Centos7，需要域名解析
+
 # 80端口开启方法
 vi /etc/sysconfig/iptables
 
