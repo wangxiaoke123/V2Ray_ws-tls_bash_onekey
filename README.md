@@ -8,6 +8,9 @@
 rojan客户端下载地址：https://github.com/atrandys/trojan/releases/download/1.0.0/trojan.zip
 
 # 80端口开启方法
+
+个人认为第二种比较靠谱，如果两种方法还是不行，多次重装大概就可以了
+
 vi /etc/sysconfig/iptables
 
 #允许80端口通过防火墙，加在COMMIT之前
