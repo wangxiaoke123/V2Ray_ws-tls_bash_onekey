@@ -1,9 +1,9 @@
 # V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本 （Use Path）
-# 另一种类似V2的方法，系统支持centos7+/debian9+/ubuntu16+，比较快，智能分流，具体项目https://github.com/atrandys/trojan
+# 另一种类似V2的方法，系统支持centos7+/debian9+/ubuntu16+，比较快，智能分流，需要开启80和443端口，具体项目https://github.com/atrandys/trojan
 
-代码curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.sh && chmod +x trojan_install.sh && ./trojan_install.sh
+centos7+   代码curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_install.sh && chmod +x trojan_install.sh && ./trojan_install.sh
 
-curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
+debian9+/ubuntu16+   curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh
 
 适用Centos7，需要域名解析，需要新修改客户端配置文件，需要将服务器证书放到里面，安全证书查找命令：/usr/src/trojan，需要下载SwitchyOmega，socks5代理的1080
 
