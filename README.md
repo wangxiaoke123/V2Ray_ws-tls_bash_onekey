@@ -80,9 +80,9 @@ Vmess + HTTP2 over TLS
 ```
 bash <(curl -L -s https://raw.githubusercontent.com/wangxiaoke123/V2Ray_ws-tls_bash_onekey/master/install_h2.sh) | tee v2ray_ins_h2.log
 ```
-## 二合一脚本
+## 二合一脚本（h2 和 ws 版本已合并）
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/wangxiaoke123/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
 ```
 ## 启动方式
 
